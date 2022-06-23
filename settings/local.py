@@ -10,4 +10,6 @@ DATABASES = {
 'HOST': 'localhost',
 }
 }
+
+"""NOT CORRECT FORMAT"""
 INSTALLED_APPS += ['eddy', ]

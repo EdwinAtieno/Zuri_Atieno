@@ -34,7 +34,7 @@ INSTALLED_APPS = [
     'eddy.apps.EddyConfig',
     'django.contrib.admin',
     'django.contrib.auth',
-    'nn',
+    '',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',

@@ -10,3 +10,12 @@ class ArticleSerializer(serializers.Serializer):
 
     def create(self, validated_data):
         return Article.objects.create(validated_data)
+
+    def update(self, instance, validated_data):
+        instance.title = validated_data.get('title', instance.title)
+        instance.author = validated_data.get('title', instance.title)
+        instance.email = validated_data.get('title', instance.title)
+        instance.date = validated_data.get('title', instance.title)
+        instance.save()
+
+        return instance

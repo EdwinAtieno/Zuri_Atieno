@@ -31,12 +31,15 @@ def article_details(request, pk):
         article = Article.objects.get(pk=pk)
     except Article.DoesNotExist:
         return HttpResponse(status=404)
+
     if request.method == "GET":
         serializer = ArticleSerializer(article)
         return JsonResponse(serializer.data)
+
     elif request.method == "PUT":
         data = JSONParser().parse(request)
         serializer = ArticleSerializer(article, data=data)
+
         if serializer.is_valid():
             serializer.save()
             return JsonResponse(serializer.data)

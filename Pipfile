@@ -1,0 +1,29 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "4.0.6"
+djangorestframework = "3.13.1"
+python-decouple = "3.6"
+dj-database-url = "0.5.0"
+psycopg2-binary = "2.9.3"
+django-cors-headers = "3.13.0"
+django-extensions = "*"
+
+
+[dev-packages]
+black = "22.6.0"
+flake8 = "4.0.1"
+mypy = "0.961"
+isort = "5.10.1"
+pre-commit = "2.20.0"
+django-stubs = "1.12.0"
+djangorestframework-stubs = "1.7.0"
+pytest = "7.1.2"
+pytest-cov = "3.0.0"
+pytest-django = "4.5.2"
+
+[requires]
+python_version = "3.9"
